@@ -32,7 +32,7 @@ val sampleProducts = listOf(
         fullDescription = "Модули стиков с датчиками Холла полностью устраняют проблему дрифта стиков. В них используются магнитные сенсоры вместо механических потенциометров, что обеспечивает непревзойденную точность и долговечность.",
         rating = 4.9,
         reviewsCount = 42,
-        imageUrl = "https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=600&auto=format&fit=crop&q=80",
+        imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aniMVV0nZBAxEfWLIukqD9j-Tc3GaG-VP0kbouQrvw&s=10",
         imageEmoji = "🕹️",
         specifications = mapOf(
             "Тип сенсора" to "Магнитные датчики Холла",
@@ -86,7 +86,7 @@ val sampleProducts = listOf(
         fullDescription = "Компактная подставка для одновременной быстрой зарядки двух геймпадов. Светодиодные индикаторы наглядно показывают статус заряда (красный — идет зарядка, синий — заряжено).",
         rating = 4.9,
         reviewsCount = 64,
-        imageUrl = "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&auto=format&fit=crop&q=80",
+        imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCVjo4tu9hiMlUVvLfBY7jtAsurulworFaSRYZHelvow&s=10",
         imageEmoji = "🔋",
         specifications = mapOf(
             "Питание" to "USB Type-C (5V/2A)",
@@ -103,7 +103,7 @@ val sampleProducts = listOf(
         fullDescription = "Сверхпрочный кабель в нейлоновой оплетке длиною 3 метра с поддержкой быстрой зарядки до 60 Вт и высокоскоростной передачи данных. Позволяет комфортно играть на диване во время зарядки.",
         rating = 4.6,
         reviewsCount = 53,
-        imageUrl = "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&auto=format&fit=crop&q=80",
+        imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlrmtnIGG2Ovv9lutVPZg2N8AtzrmGtjvpcBSavYITw&s=10",
         imageEmoji = "🔌",
         specifications = mapOf(
             "Длина" to "3 метра",
@@ -120,7 +120,7 @@ val sampleProducts = listOf(
         fullDescription = "Высокоскоростная карта MicroSDXC UHS-I U3 A2 с высокой скоростью чтения до 160 МБ/с. Идеально подходит для консолей Steam Deck, Nintendo Switch и современных смартфонов.",
         rating = 4.8,
         reviewsCount = 210,
-        imageUrl = "https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?w=600&auto=format&fit=crop&q=80",
+        imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrE2gdduM0ZxTZyrhvAl8_AB7ok79r8Lka2Nry0Ff5aw&s=10",
         imageEmoji = "💾",
         specifications = mapOf(
             "Объем" to "256 ГБ",
@@ -137,7 +137,7 @@ val sampleProducts = listOf(
         fullDescription = "Компактная механика 75% формата с смазанными линейными переключателями Red Switch, настраиваемой миллионом цветов RGB-подсветкой и съемным Type-C кабелем.",
         rating = 4.9,
         reviewsCount = 95,
-        imageUrl = "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop&q=80",
+        imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy4yMZ1yoplU5RuBLDvee54yo2hwaSJ35tqIlLvmAdAQ&s=10",
         imageEmoji = "⌨️",
         specifications = mapOf(
             "Формат" to "75% (82 клавиши)",
