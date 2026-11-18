@@ -531,7 +531,7 @@ fun CartBottomSheet(
                                         overflow = TextOverflow.Ellipsis
                                     )
                                     Text(
-                                        text = "${product.price.toInt()} ₽",
+                                        text = formatPrice(product.price),
                                         style = MaterialTheme.typography.bodySmall,
                                         color = MaterialTheme.colorScheme.primary
                                     )
@@ -587,7 +587,7 @@ fun CartBottomSheet(
                         fontWeight = FontWeight.Bold
                     )
                     Text(
-                        text = "${totalPrice.toInt()} ₽",
+                        text = formatPrice(totalPrice),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.ExtraBold,
                         color = MaterialTheme.colorScheme.primary

@@ -145,7 +145,7 @@ fun ProductDetailSheet(
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Text(
-                    text = "${product.price.toInt()} ₽",
+                    text = formatPrice(product.price),
                     style = MaterialTheme.typography.headlineMedium,
                     fontWeight = FontWeight.ExtraBold,
                     color = MaterialTheme.colorScheme.primary
@@ -234,7 +234,7 @@ fun ProductDetailSheet(
                     shape = RoundedCornerShape(14.dp)
                 ) {
                     Text(
-                        text = "Добавить в корзину • ${product.price.toInt()} ₽",
+                        text = "Добавить в корзину • ${formatPrice(product.price)}",
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold
                     )

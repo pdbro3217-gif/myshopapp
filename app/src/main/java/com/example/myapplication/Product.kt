@@ -14,17 +14,23 @@ data class Product(
     val specifications: Map<String, String> = emptyMap()
 )
 
+fun formatPrice(price: Double): String {
+    val amount = price.toInt()
+    val formatted = String.format("%,d", amount).replace(',', ' ')
+    return "$formatted ₸"
+}
+
 val sampleProducts = listOf(
     Product(
         id = 1,
         title = "Стики с эффектом холла",
-        price = 7990.0,
+        price = 4990.0,
         category = "Запчасти",
         description = "Стики с эффектом холла дают бесконечную работу без дрифта",
         fullDescription = "Модули стиков с датчиками Холла полностью устраняют проблему дрифта стиков. В них используются магнитные сенсоры вместо механических потенциометров, что обеспечивает непревзойденную точность и долговечность.",
         rating = 4.9,
         reviewsCount = 42,
-        imageUrl = "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80",
+        imageUrl = "https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=600&auto=format&fit=crop&q=80",
         imageEmoji = "🕹️",
         specifications = mapOf(
             "Тип сенсора" to "Магнитные датчики Холла",
@@ -36,7 +42,7 @@ val sampleProducts = listOf(
     Product(
         id = 2,
         title = "Беспроводной геймпад",
-        price = 5490.0,
+        price = 24990.0,
         category = "Геймпады",
         description = "Эргономичный контроллер с виброотдачей и аккумулятором на 12 часов",
         fullDescription = "Продвинутый беспроводной геймпад с импульсными триггерами, встроенным аккумулятором увеличенной емкости и эргономичным прорезиненным хватом для длительных игровых сессий.",
@@ -54,7 +60,7 @@ val sampleProducts = listOf(
     Product(
         id = 3,
         title = "Игровая гарнитура 7.1",
-        price = 4290.0,
+        price = 18490.0,
         category = "Аудио",
         description = "Объемный звук, съёмный микрофон и мягкие амбушюры",
         fullDescription = "Полноразмерные игровые наушники с виртуальным объемным звуком 7.1. Оснащены 50-мм динамиками с неодимовыми магнитами, съёмным микрофоном с шумоподавлением и дышащими тканевыми амбушюрами.",
@@ -72,7 +78,7 @@ val sampleProducts = listOf(
     Product(
         id = 4,
         title = "Зарядная станция Dual",
-        price = 2990.0,
+        price = 12990.0,
         category = "Зарядные устройства",
         description = "Быстрая одновременная зарядка двух контроллеров со светодиодом",
         fullDescription = "Компактная подставка для одновременной быстрой зарядки двух геймпадов. Светодиодные индикаторы наглядно показывают статус заряда (красный — идет зарядка, синий — заряжено).",
@@ -89,7 +95,7 @@ val sampleProducts = listOf(
     Product(
         id = 5,
         title = "Кабель USB-C Type-C 3m",
-        price = 1290.0,
+        price = 3990.0,
         category = "Кабели",
         description = "Прочный нейлоновый кабель высокой длины для игры во время зарядки",
         fullDescription = "Сверхпрочный кабель в нейлоновой оплетке длиною 3 метра с поддержкой быстрой зарядки до 60 Вт и высокоскоростной передачи данных. Позволяет комфортно играть на диване во время зарядки.",
@@ -106,7 +112,7 @@ val sampleProducts = listOf(
     Product(
         id = 6,
         title = "Карта памяти 256 ГБ",
-        price = 3190.0,
+        price = 11490.0,
         category = "Накопители",
         description = "Высокоскоростная карта памяти MicroSDXC для быстрых загрузок",
         fullDescription = "Высокоскоростная карта MicroSDXC UHS-I U3 A2 с высокой скоростью чтения до 160 МБ/с. Идеально подходит для консолей Steam Deck, Nintendo Switch и современных смартфонов.",
@@ -123,7 +129,7 @@ val sampleProducts = listOf(
     Product(
         id = 7,
         title = "Механическая клавиатура",
-        price = 6890.0,
+        price = 28990.0,
         category = "Периферия",
         description = "RGB подсветка, переключатели Red switch и компактный корпус",
         fullDescription = "Компактная механика 75% формата с смазанными линейными переключателями Red Switch, настраиваемой миллионом цветов RGB-подсветкой и съемным Type-C кабелем.",
@@ -140,7 +146,7 @@ val sampleProducts = listOf(
     Product(
         id = 8,
         title = "Игровая мышь 16000 DPI",
-        price = 3990.0,
+        price = 15990.0,
         category = "Периферия",
         description = "Легкий корпус, точный оптический сенсор и программируемые кнопки",
         fullDescription = "Ультралегкая эргономичная мышь весом всего 59 г с топовым оптическим сенсором PixArt, тефлоновыми ножками PTFE и 6 программируемыми кнопками.",
