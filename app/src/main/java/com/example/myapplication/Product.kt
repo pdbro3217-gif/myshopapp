@@ -1,5 +1,7 @@
 package com.example.myapplication
 
+import java.util.Locale
+
 data class Product(
     val id: Int,
     val title: String,
@@ -16,7 +18,7 @@ data class Product(
 
 fun formatPrice(price: Double): String {
     val amount = price.toInt()
-    val formatted = String.format("%,d", amount).replace(',', ' ')
+    val formatted = String.format(Locale("ru", "RU"), "%,d", amount)
     return "$formatted ₸"
 }
 
