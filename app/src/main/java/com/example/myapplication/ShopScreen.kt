@@ -119,7 +119,6 @@ fun ShopScreen(
     val coroutineScope = rememberCoroutineScope()
 
     var cartButtonCoordinates by remember { mutableStateOf<Offset?>(null) }
-    val cartScale = remember { Animatable(1f) }
     val flyingItems = remember { mutableStateListOf<ActiveFlyingItem>() }
 
     val totalCount = cartItems.values.sum()
@@ -137,10 +136,6 @@ fun ShopScreen(
                             onClick = { showCartSheet = true },
                             modifier = Modifier
                                 .padding(end = 12.dp)
-                                .graphicsLayer {
-                                    scaleX = cartScale.value
-                                    scaleY = cartScale.value
-                                }
                                 .onGloballyPositioned { coordinates ->
                                     cartButtonCoordinates = coordinates.positionInRoot()
                                 },
@@ -270,14 +265,6 @@ fun ShopScreen(
 
                                         cartItems[product] = (cartItems[product] ?: 0) + 1
                                         flyingItems.remove(flyingItem)
-
-                                        launch {
-                                            cartScale.animateTo(1.25f, animationSpec = tween(100))
-                                            cartScale.animateTo(
-                                                1.0f,
-                                                animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy)
-                                            )
-                                        }
                                     }
                                 }
                             )
@@ -310,14 +297,6 @@ fun ShopScreen(
 
                             cartItems[prod] = (cartItems[prod] ?: 0) + 1
                             flyingItems.remove(flyingItem)
-
-                            launch {
-                                cartScale.animateTo(1.25f, animationSpec = tween(100))
-                                cartScale.animateTo(
-                                    1.0f,
-                                    animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy)
-                                )
-                            }
                         }
                     }
                 )
